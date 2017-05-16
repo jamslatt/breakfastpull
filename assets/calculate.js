@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('.out').css('display','none');
   $('.submit').click(function(){
     // Collect Values on Submit
     var burritoMix = $('#burritoMix').val();
@@ -23,9 +24,14 @@ $(document).ready(function(){
     $('.tortillas').append(calcNeeded(tortillas, 10));
     $('.muff').append(calcNeeded(muff, 8));
 
-    $('.out').show();
+    $('.out').fadeIn('fast');
 
     return false;
 
+  })
+  $('.back').click(function () {
+    $('.out').hide();
+    $('.i').html("");
+    $('.in').fadeIn('fast');
   })
 });
