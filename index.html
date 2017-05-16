@@ -10,8 +10,8 @@
 </head>
 <body>
 <div class="container">
-	<div class="col s6">
-			<h3>Breakfast Pull</h3>
+	<div class="col s6 in">
+			<h4>Enter What You Have:</h4>
 			<form>
 				<div class="input-field">
             <input id="burritoMix" type="number">
@@ -35,20 +35,32 @@
  	         </div>
 					 <div class="input-field">
  	            <input id="tortillas" type="number">
- 	            <label for="guac">How many bags of Tortillas?</label>
+ 	            <label for="tortillas">How many bags of Tortillas?</label>
  	         </div>
 					 <div class="input-field">
  	            <input id="muff" type="number">
  	            <label for="muff">How many racks of Muffins?</label>
  	         </div>
-					 <button style="width: 100%;" class="btn waves-effect waves-light" type="submit" name="action">Calculate
+					 <button style="width: 100%;" class="btn submit waves-effect waves-light" type="submit" name="action">Calculate
   </button>
 			</form>
+	</div>
+	<div class="col s6 out">
+		<h4>You need:</h4>
+		<ul class="collection">
+      <li class="collection-item">Burrito Mix:&nbsp;<span class="burritoMix"></span></li>
+      <li class="collection-item">Guacomole:&nbsp;<span class="guac"><span></li>
+      <li class="collection-item">Southwest Veggie Blend:&nbsp;<span class="swblend"></span></li>
+      <li class="collection-item">Folded Eggs:&nbsp;<span class="fold"></fold></li>
+			<li class="collection-item">Hotcakes:&nbsp;<span class="hotcakes"></fold></li>
+			<li class="collection-item">Tortillas:&nbsp;<span class="tortillas"></fold></li>
+			<li class="collection-item">Racks of Muffins:&nbsp;<span class="muff"></fold></li>
+    </ul>
 	</div>
 </div>
 <!-- Javascript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-<script src="assets/nav.js"></script>
+<script src="assets/calculate.js"></script>
 </body>
 </html>
