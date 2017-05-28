@@ -10,13 +10,13 @@ $(document).ready(function(){
     var tortillas = $('#tortillas').val();
     var muff = $('#muff').val();
 
+
     function calcNeeded(have, need) {
       return need - have;
     }
 
-    console.log(calcNeeded(guac, 10));
     $('.in').hide();
-    $('.burritoMix').append(calcNeeded(burritoMix, 8));
+    $('.burritoMix').append(calcNeeded(burritoMix, 8) + " (not adjusted for thurs,sat,sun yet)");
     $('.guac').append(calcNeeded(guac, 3));
     $('.swblend').append(calcNeeded(swblend, 2));
     $('.fold').append(calcNeeded(fold, 12));
