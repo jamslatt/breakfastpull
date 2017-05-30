@@ -2,11 +2,11 @@ $(document).ready(function(){
   $('.out').css('display','none');
   $('.submit').click(function(){
     // Collect Values on Submit
-    var regBun = $('#burritoMix').val();
-    var qtrBun = $('#guac').val();
-    var macBun = $('#swblend').val();
-    var artBun = $('#fold').val();
-    var tortilla = $('#hotcakes').val();
+    var regBun = $('#b_reg').val();
+    var qtrBun = $('#b_qtr').val();
+    var macBun = $('#b_mac').val();
+    var artBun = $('#b_art').val();
+    var tortilla = $('#b_tortilla').val();
 
 
     function calcNeeded(have, need) {
