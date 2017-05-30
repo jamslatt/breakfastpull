@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Breakfast Pull</title>
+	<meta name="theme-color" content="#D32F2F" />
+	<link rel="text/css" type="stylesheet" href="assets/theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<link rel="shortcut icon" href="../assets/favicon.ico" />
+</head>
+<body>
+<div class="container">
+	<div class="col s6 in">
+			<h4>Enter What You Have:</h4>
+			<form>
+				<div class="input-field">
+            <input id="b_reg" type="number">
+            <label for="b_reg">Reg Buns</label>
+          </div>
+					 <div class="input-field">
+ 	            <input id="b_qtr" type="number">
+ 	            <label for="b_qtr">Qtr Buns</label>
+ 	         </div>
+           <div class="input-field">
+ 	            <input id="b_mac" type="number">
+ 	            <label for="b_mac">Mac Buns</label>
+ 	         </div>
+           <div class="input-field">
+ 	            <input id="b_art" type="number">
+ 	            <label for="b_art">Artisan</label>
+ 	         </div>
+           <div class="input-field">
+ 	            <input id="b_tortilla" type="number">
+ 	            <label for="b_tortilla">8" Tortillas</label>
+ 	         </div>
+					 <button style="width: 100%;background:#D32F2F;" class="btn submit waves-effect waves-light" type="submit" name="action">Calculate
+  </button>
+			</form>
+	</div>
+	<div class="col s6 out">
+		<h4>You need:</h4>
+		<ul class="collection">
+			<li class="collection-item">Racks of Muffins:&nbsp;<span class="muff i"></span></li>
+    </ul>
+		<button style="width: 100%;background:#D32F2F;" class="btn back waves-effect waves-light">Return
+	</div>
+</div>
+<!-- Javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<script src="../assets/bunn_calculate.js"></script>
+</body>
+</html>
