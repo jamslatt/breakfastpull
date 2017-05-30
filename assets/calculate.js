@@ -17,11 +17,16 @@ $(document).ready(function(){
 
     $('.in').hide();
     // if it is a thurs, fri, sat adjust need Values
+    var now = new Date();
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    var day = days[now.getDay()];
     if ( day == "Thursday" || day == "Friday" || day == "Saturday") {
       $('.burritoMix').append(calcNeeded(burritoMix, 10));
+      return false;
     }
     else {
       $('.burritoMix').append(calcNeeded(burritoMix, 8));
+      return false;
     }
     $('.guac').append(calcNeeded(guac, 3));
     $('.swblend').append(calcNeeded(swblend, 2));
