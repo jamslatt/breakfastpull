@@ -16,7 +16,13 @@ $(document).ready(function(){
     }
 
     $('.in').hide();
-    $('.burritoMix').append(calcNeeded(burritoMix, 8) + " (not adjusted for thurs,sat,sun yet)");
+    // if it is a thurs, fri, sat adjust need Values
+    if ( day == "Thursday" || day == "Friday" || day == "Saturday") {
+      $('.burritoMix').append(calcNeeded(burritoMix, 10));
+    }
+    else {
+      $('.burritoMix').append(calcNeeded(burritoMix, 8));
+    }
     $('.guac').append(calcNeeded(guac, 3));
     $('.swblend').append(calcNeeded(swblend, 2));
     $('.fold').append(calcNeeded(fold, 12));
