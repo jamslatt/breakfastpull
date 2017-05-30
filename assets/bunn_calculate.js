@@ -23,7 +23,7 @@ $(document).ready(function(){
 
     return false;
 
-  })
+  });
   $('.back').click(function () {
     $('.out').hide();
     $('.i').html("");
